@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>100 Box Jewelry Gallery</title>
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #121212;
+    color: #fff;
+    text-align: center;
+  }
+  h1 {
+    padding: 1rem;
+    color: #f1c40f;
+  }
+  .grid {
+   display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Har row me 4 boxes */
+  gap: 10px;
+  max-width: 1200px; /* thoda bada width taaki 4 comfortably fit ho */
+  margin: auto;
+  padding: 1rem;
+  }
+  .box {
+    background: #1e1e1e;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .box img {
+    width: 100%;
+
+    height: 220px;
+    object-fit: cover;
+    display: block;
+  }
+  .box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(255,255,255,0.2);
+  }
+  #image-display {
+    margin: 20px auto;
+    max-width: 500px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    display: none;
+  }
+</style>
+</head>
+<body>
+
+<h1>100 Box Jewelry Gallery</h1>
+
+<div class="grid" id="grid">
+  <!-- Yaha apni images manually add karo -->
+  <div class="box"><img src="image1.jpg" alt="image1"><p>image1</p></div>
+  <div class="box"><img src="image2.jpg" alt="image2"><p>image2</p></div>
+  <div class="box"><img src="image3.jpg" alt="image3"><p>image3</p></div>
+  <div class="box"><img src="image4.jpg" alt="image4"><p>image4</p></div>
+  <div class="box"><img src="image5.jpg" alt="image5"><p>image5</p></div>
+  <div class="box"><img src="image6.jpg" alt="image6"><p>image6</p></div>
+  <div class="box"><img src="image7.jpg" alt="image7"><p>image7</p></div>
+  <div class="box"><img src="image8.jpg" alt="image8"><p>image8</p></div>
+  <div class="box"><img src="image9.jpg" alt="image9"><p>image9</p></div>
+  <div class="box"><img src="image10.jpg" alt="image10"><p>image10</p></div>
+  <div class="box"><img src="image11.jpg" alt="image11"><p>image11</p></div>
+  <div class="box"><img src="image12.jpg" alt="image12"><p>image12</p></div>
+  <div class="box"><img src="image13.jpg" alt="image13"><p>image13</p></div>
+  <div class="box"><img src="image14.jpg" alt="image14"><p>image14</p></div>
+  <div class="box"><img src="image15.jpg" alt="image15"><p>image15</p></div>
+  <div class="box"><img src="image16.jpg" alt="image16"><p>image16</p></div>
+  <div class="box"><img src="image17.jpg" alt="image17"><p>image17</p></div>
+  <div class="box"><img src="image18.jpg" alt="image18"><p>image18</p></div>
+  <div class="box"><img src="image19.jpg" alt="image19"><p>image19</p></div>
+  <div class="box"><img src="image20.jpg" alt="image20"><p>image20</p></div>
+  <div class="box"><img src="image21.jpg" alt="image21"><p>image21</p></div>
+  <div class="box"><img src="image22.jpg" alt="image22"><p>image22</p></div>
+  <div class="box"><img src="image23.jpg" alt="image23"><p>image23</p></div>
+  <div class="box"><img src="image24.jpg" alt="image24"><p>image24</p></div>
+  <div class="box"><img src="image25.jpg" alt="image25"><p>image25</p></div>
+  <div class="box"><img src="image26.jpg" alt="image26"><p>image26</p></div>
+  <div class="box"><img src="image27.jpg" alt="image27"><p>image27</p></div>
+  <div class="box"><img src="image28.jpg" alt="image28"><p>image28</p></div>
+  <div class="box"><img src="image29.jpg" alt="image29"><p>image29</p></div>
+  <div class="box"><img src="image30.jpg" alt="image30"><p>image30</p></div>
+  <div class="box"><img src="image31.jpg" alt="image31"><p>image31</p></div>
+  <div class="box"><img src="image32.jpg" alt="image32"><p>image32</p></div>
+  <div class="box"><img src="image33.jpg" alt="image33"><p>image33</p></div>
+  <div class="box"><img src="image34.jpg" alt="image34"><p>image34</p></div>
+  <div class="box"><img src="image35.jpg" alt="image35"><p>image35</p></div>
+  <div class="box"><img src="image36.jpg" alt="image36"><p>image36</p></div>
+  <div class="box"><img src="image38.jpg" alt="image38"><p>image38</p></div>
+  <div class="box"><img src="image39.jpg" alt="image39"><p>image39</p></div>
+  <div class="box"><img src="image40.jpg" alt="image40"><p>image40</p></div>
+  <div class="box"><img src="image41.jpg" alt="image41"><p>image41</p></div>
+  <div class="box"><img src="image42.jpg" alt="image42"><p>image42</p></div>
+  <div class="box"><img src="image43.jpg" alt="image43"><p>image43</p></div>
+  <div class="box"><img src="image44.jpg" alt="image44"><p>image44</p></div>
+  <div class="box"><img src="image45.jpg" alt="image45"><p>image45</p></div>
+  <div class="box"><img src="image46.jpg" alt="image46"><p>image46</p></div>
+  <div class="box"><img src="image47.jpg" alt="image47"><p>image47</p></div>
+  <div class="box"><img src="image48.jpg" alt="image48"><p>image48</p></div>
+  <div class="box"><img src="image49.jpg" alt="image49"><p>image49</p></div>
+  <div class="box"><img src="image50.jpg" alt="image50"><p>image50</p></div>
+  <div class="box"><img src="image51.jpg" alt="image51"><p>image51</p></div>
+  <div class="box"><img src="image52.jpg" alt="image52"><p>image52</p></div>
+  <div class="box"><img src="image53.jpg" alt="image53"><p>image53</p></div>
+  <div class="box"><img src="image54.jpg" alt="image54"><p>image54</p></div>
+  <div class="box"><img src="image55.jpg" alt="image55"><p>image55</p></div>
+  <div class="box"><img src="image56.jpg" alt="image56"><p>image56</p></div>
+  <div class="box"><img src="image57.jpg" alt="image57"><p>image57</p></div>
+  <div class="box"><img src="image58.jpg" alt="image58"><p>image58</p></div>
+  <div class="box"><img src="image59.jpg" alt="image59"><p>image59</p></div>
+
+    <div class="box"><img src="image69.jpg" alt="image69"><p>image69</p></div>
+    <div class="box"><img src="image70.jpg" alt="image70"><p>image70</p></div>
+    <div class="box"><img src="image71.jpg" alt="image71"><p>image71</p></div>
+    <div class="box"><img src="image72.jpg" alt="image72"><p>image72</p></div>
+    <div class="box"><img src="image73.jpg" alt="image73"><p>image73</p></div>
+    <div class="box"><img src="image74.jpg" alt="image74"><p>image74</p></div>
+    <div class="box"><img src="image75.jpg" alt="image75"><p>image75</p></div>
+    <div class="box"><img src="image76.jpg" alt="image76"><p>image76</p></div>
+    <div class="box"><img src="image77.jpg" alt="image77"><p>image77</p></div>
+    <div class="box"><img src="image78.jpg" alt="image78"><p>image78</p></div>
+    <div class="box"><img src="image79.jpg" alt="image79"><p>image79</p></div>
+    <div class="box"><img src="image80.jpg" alt="image80"><p>image80</p></div>
+    <div class="box"><img src="image81.jpg" alt="image81"><p>image81</p></div>
+    <div class="box"><img src="image82.jpg" alt="image82"><p>image82</p></div>
+    <div class="box"><img src="image83.jpg" alt="image83"><p>image83</p></div>
+    <div class="box"><img src="image84.jpg" alt="image84"><p>image84</p></div>
+    <div class="box"><img src="image85.jpg" alt="image85"><p>image85</p></div>
+    <div class="box"><img src="image86.jpg" alt="image86"><p>image86</p></div>
+    <div class="box"><img src="image87.jpg" alt="image87"><p>image87</p></div>
+    <div class="box"><img src="image88.jpg" alt="image88"><p>image88</p></div>
+    <div class="box"><img src="image89.jpg" alt="image89"><p>image89</p></div>
+    <div class="box"><img src="image90.jpg" alt="image90"><p>image90</p></div>
+    <div class="box"><img src="image91.jpg" alt="image91"><p>image91</p></div>
+    <div class="box"><img src="image92.jpg" alt="image92"><p>image92</p></div>
+    <div class="box"><img src="image93.jpg" alt="image93"><p>image93</p></div>
+    <div class="box"><img src="image94.jpg" alt="image94"><p>image94</p></div>
+    <div class="box"><img src="image95.jpg" alt="image95"><p>image95</p></div>   
+    <div class="box"><img src="image96.jpg" alt="image96"><p>image96</p></div>
+    <div class="box"><img src="image97.jpg" alt="image97"><p>image97</p></div>
+    <div class="box"><img src="image98.jpg" alt="image98"><p>image98</p></div>
+    <div class="box"><img src="image99.jpg" alt="image99"><p>image99</p></div>
+    <div class="box"><img src="image100.jpg" alt="image100"><p>image100</p></div>
+    <div class="box"><img src="image101.jpg" alt="image101"><p>image101</p></div>
+<div class="box"><img src="image102.jpg" alt="image102"><p>image102</p></div>
+<div class="box"><img src="image103.jpg" alt="image103"><p>image103</p></div>
+<div class="box"><img src="image104.jpg" alt="image104"><p>image104</p></div>
+<div class="box"><img src="image105.jpg" alt="image105"><p>image105</p></div>
+<div class="box"><img src="image106.jpg" alt="image106"><p>image106</p></div>
+<div class="box"><img src="image107.jpg" alt="image107"><p>image107</p></div>
+<div class="box"><img src="image108.jpg" alt="image108"><p>image108</p></div>
+<div class="box"><img src="image109.jpg" alt="image109"><p>image109</p></div>
+<div class="box"><img src="image110.jpg" alt="image110"><p>image110</p></div>
+<div class="box"><img src="image111.jpg" alt="image111"><p>image111</p></div>
+<div class="box"><img src="image112.jpg" alt="image112"><p>image112</p></div>
+<div class="box"><img src="image113.jpg" alt="image113"><p>image113</p></div>
+<div class="box"><img src="image114.jpg" alt="image114"><p>image114</p></div>
+<div class="box"><img src="image115.jpg" alt="image115"><p>image115</p></div>
+<div class="box"><img src="image116.jpg" alt="image116"><p>image116</p></div>
+<div class="box"><img src="image117.jpg" alt="image117"><p>image117</p></div>
+<div class="box"><img src="image118.jpg" alt="image118"><p>image118</p></div>
+<div class="box"><img src="image119.jpg" alt="image119"><p>image119</p></div>
+<div class="box"><img src="image120.jpg" alt="image120"><p>image120</p></div>
+<div class="box"><img src="image121.jpg" alt="image121"><p>image121</p></div>
+<div class="box"><img src="image122.jpg" alt="image122"><p>image122</p ></div>
+<div class="box"><img src="image123.jpg" alt="image123"><p>image123</p></div>
+<div class="box"><img src="image124.jpg" alt="image124"><p>image124</p></div>
+<div class="box"><img src="image125.jpg" alt="image125"><p>image125</p></div>
+<div class="box"><img src="image126.jpg" alt="image126"><p>image126</p></div>
+<div class="box"><img src="image127.jpg" alt="image127"><p>image127</p></div>
+<div class="box"><img src="image128.jpg" alt="image128"><p>image128</p></div>
+<div class="box"><img src="image129.jpg" alt="image129"><p>image129</p></div>
+<div class="box"><img src="image130.jpg" alt="image130"><p>image130</p></div>
+<div class="box"><img src="image131.jpg" alt="image131"><p>image131</p></div>
+<div class="box"><img src="image132.jpg" alt="image132"><p>image132</p></div>
+<div class="box"><img src="image133.jpg" alt="image133"><p>image133</p></div>
+<div class="box"><img src="image134.jpg" alt="image134"><p>image134</p></div>
+<div class="box"><img src="image135.jpg" alt="image135"><p>image135</p></div>
+<div class="box"><img src="image136.jpg" alt="image136"><p>image136</p></div>
+<div class="box"><img src="image137.jpg" alt="image137"><p>image137</p></div>
+<div class="box"><img src="image138.jpg" alt="image138"><p>image138</p></div>
+<div class="box"><img src="image139.jpg" alt="image139"><p>image139</p></div>
+<div class="box"><img src="image140.jpg" alt="image140"><p>image140</p></div>
+<div class="box"><img src="image141.jpg" alt="image141"><p>image141</p></div>
+<div class="box"><img src="image142.jpg" alt="image142"><p>image142</p></div>
+<div class="box"><img src="image143.jpg" alt="image143"><p>image143</p></div>
+<div class="box"><img src="image144.jpg" alt="image144"><p>image144</p></div>
+<div class="box"><img src="image145.jpg" alt="image145"><p>image145</p></div>
+<div class="box"><img src="image146.jpg" alt="image146"><p>image146</p></div>
+<div class="box"><img src="image147.jpg" alt="image147"><p>image147</p></div>
+<div class="box"><img src="image148.jpg" alt="image148"><p>image148</p></div>
+<div class="box"><img src="image149.jpg" alt="image149"><p>image149</p></div>
+<div class="box"><img src="image150.jpg" alt="image150"><p>image150</p></div>
+<div class="box"><img src="image151.jpg" alt="image151"><p>image151</p></div>
+<div class="box"><img src="image152.jpg" alt="image152"><p>image152</p></div>
+<div class="box"><img src="image153.jpg" alt="image153"><p>image153</p></div>
+<div class="box"><img src="image154.jpg" alt="image154"><p>image154</p></div>
+<div class="box"><img src="image155.jpg" alt="image155"><p>image155</p></div>
+<div class="box"><img src="image156.jpg" alt="image156"><p>image156</p></div>
+<div class="box"><img src="image157.jpg" alt="image157"><p>image157</p></div>
+<div class="box"><img src="image158.jpg" alt="image158"><p>image158</p></div>
+<div class="box"><img src="image159.jpg" alt="image159"><p>image159</p></div>
+<div class="box"><img src="image160.jpg" alt="image160"><p>image160</p></div>
+<div class="box"><img src="image161.jpg" alt="image161"><p>image161</p></div>
+<div class="box"><img src="image162.jpg" alt="image162"><p>image162</p></div>
+<div class="box"><img src="image163.jpg" alt="image163"><p>image163</p></div>
+<div class="box"><img src="image164.jpg" alt="image164"><p>image164</p></div>
+<div class="box"><img src="image165.jpg" alt="image165"><p>image165</p></div>
+<div class="box"><img src="image166.jpg" alt="image166"><p>image166</p></div>
+<div class="box"><img src="image167.jpg" alt="image167"><p>image167</p></div>
+<div class="box"><img src="image168.jpg" alt="image168"><p>image168</p></div>
+<div class="box"><img src="image169.jpg" alt="image169"><p>image169</p></div>
+<div class="box"><img src="image170.jpg" alt="image170"><p>image170</p></div>
+<div class="box"><img src="image171.jpg" alt="image171"><p>image171</p></div>
+<div class="box"><img src="image172.jpg" alt="image172"><p>image172</p></div>
+<div class="box"><img src="image173.jpg" alt="image173"><p>image173</p></div>
+<div class="box"><img src="image174.jpg" alt="image174"><p>image174</p></div>
+<div class="box"><img src="image175.jpg" alt="image175"><p>image175</p></div>
+<div class="box"><img src="image176.jpg" alt="image176"><p>image176</p></div>
+<div class="box"><img src="image177.jpg" alt="image177"><p>image177</p></div>
+<div class="box"><img src="image178.jpg" alt="image178"><p>image178</p></div>
+<div class="box"><img src="image179.jpg" alt="image179"><p>image179</p></div>
+<div class="box"><img src="image180.jpg" alt="image180"><p>image180</p></div>
+<div class="box"><img src="image181.jpg" alt="image181"><p>image181</p></div>
+<div class="box"><img src="image182.jpg" alt="image182"><p>image182</p></div>
+<div class="box"><img src="image183.jpg" alt="image183"><p>image183</p></div>
+<div class="box"><img src="image184.jpg" alt="image184"><p>image184</p></div>
+<div class="box"><img src="image185.jpg" alt="image185"><p>image185</p></div>
+<div class="box"><img src="image186.jpg" alt="image186"><p>image186</p></div>
+<div class="box"><img src="image187.jpg" alt="image187"><p>image187</p></div>
+<div class="box"><img src="image188.jpg" alt="image188"><p>image188</p></div>
+<div class="box"><img src="image189.jpg" alt="image189"><p>image189</p></div>
+<div class="box"><img src="image190.jpg" alt="image190"><p>image190</p></div>
+<div class="box"><img src="image191.jpg" alt="image191"><p>image191</p></div>
+<div class="box"><img src="image192.jpg" alt="image192"><p>image192</p></div>
+<div class="box"><img src="image193.jpg" alt="image193"><p>image193</p></div>
+<div class="box"><img src="image194.jpg" alt="image194"><p>image194</p></div>
+<div class="box"><img src="image195.jpg" alt="image195"><p>image195</p></div>
+<div class="box"><img src="image196.jpg" alt="image196"><p>image196</p></div>
+<div class="box"><img src="image197.jpg" alt="image197"><p>image197</p></div>
+<div class="box"><img src="image198.jpg" alt="image198"><p>image198</p></div>
+<div class="box"><img src="image199.jpg" alt="image199"><p>image199</p></div>
+<div class="box"><img src="image200.jpg" alt="image200"><p>image200</p></div>
+<div
+  class="box"><img src="image201.jpg" alt="image201"><p>image201</p></div>
+<div class="box"><img src="image202.jpg" alt="image202"><p>image202</p></div>
+<div class="box"><img src="image203.jpg" alt="image203"><p>image203</p></div>
+<div class="box"><img src="image204.jpg" alt="image204"><p>image204</p></div>
+<div class="box"><img src="image205.jpg" alt="image205"><p>image205</p></div>
+<div class="box"><img src="image206.jpg" alt="image206"><p>image206</p></div>
+<div class="box"><img src="image207.jpg" alt="image207"><p>image207</p></div>
+<div class="box"><img src="image208.jpg" alt="image208"><p>image208</p></div>
+<div class="box"><img src="image209.jpg" alt="image209"><p>image209</p></div>
+<div class="box"><img src="image210.jpg" alt="image210"><p>image210</p></div>
+
+<div class="box"><img src="image211.jpg" alt="image211"><p>image211</p></div>
+<div class="box"><img src="image212.jpg" alt="image212"><p>image212</p></div>
+<div class="box"><img src="image213.jpg" alt="image213"><p>image213</p></div>
+<div class="box"><img src="image214.jpg" alt="image214"><p>image214</p></div>
+<div class="box"><img src="image215.jpg" alt="image215"><p>image215</p></div>
+<div class="box"><img src="image216.jpg" alt="image216"><p>image216</p></div>
+<div class="box"><img src="image217.jpg" alt="image217"><p>image217</p></div> 
+<div class="box"><img src="image218.jpg" alt="image218"><p>image218</p></div>
+<div class="box"><img src="image219.jpg" alt="image219"><p> image219</p></div>
+<div class="box"><img src="image220.jpg" alt="image220"><p>image220</p></div>
+<div class="box"><img src="image221.jpg" alt="image221"><p>image221</p></div>
+<div class="box"><img src="image222.jpg" alt="image222"><p> image222</p></div>
+<div class="box"><img src="image223.jpg" alt="image223"><p>image223</p></div>
+<div class="box"><img src="image224.jpg" alt="image224"><p>image224</p></div>
+<div class="box"><img src="image225.jpg" alt="image225"><p>image225</p></div>
+<div class="box"><img src="image226.jpg" alt="image226"><p>image226</p></div>
+<div class="box"><img src="image227.jpg" alt="image227"><p>image227</p></div>
+<div class="box"><img src="image228.jpg" alt="image228"><p>image228</p></div>
+<div class="box"><img src="image229.jpg" alt="image229"><p>image229</p></div>
+<div class="box"><img src="image230.jpg" alt="image230"><p>image230</p></div>
+<div class="box"><img src="image231.jpg" alt="image231"><p>image231</p></div>
+<div class="box"><img src="image232.jpg" alt="image232"><p>image232</p></div>
+<div class="box"><img src="image233.jpg" alt="image233"><p>image233</p></div>
+<div class="box"><img src="image234.jpg" alt="image234"><p>image234</p></div>
+
+<div class="box"><img src="image235.jpg" alt="image235"><p>image235</p></div>
+<div class="box"><img src="image236.jpg" alt="image236"><p>image236</p></div>
+<div class="box"><img src="image237.jpg" alt="image237"><p>image237</p></div>
+<div class="box"><img src="image238.jpg" alt="image238"><p>image238</p></div>
+<div class="box"><img src="image239.jpg" alt="image239"><p>image239</p></div>
+<div class="box"><img src="image240.jpg" alt="image240"><p>image240</p></div>
+<div class="box"><img src="image241.jpg" alt="image241"><p>image241</p></div>
+<div class="box"><img src="image242.jpg" alt="image242"><p>image242</p></div>
+<div class="box"><img src="image243.jpg" alt="image243"><p>image243</p></div>
+<div class="box"><img src="image244.jpg" alt="image244"><p>image244</p></div>
+<div class="box"><img src="image245.jpg" alt="image245"><p>image245</p></div>
+<div class="box"><img src="image246.jpg" alt="image246"><p>image246</p></div>
+<div class="box"><img src="image247.jpg" alt="image247"><p>image247</p></div>
+<div class="box"><img src="image248.jpg" alt="image248"><p>image248</p></div>
+<div class="box"><img src="image249.jpg" alt="image249"><p>image249</p></div>
+<div class="box"><img src="image250.jpg" alt="image250"><p>image250</p></div>
+<div class="box"><img src="image251.jpg" alt="image251"><p>image251</p></div>
+<div class="box"><img src="image252.jpg" alt="image252"><p>image252</p></div>
+<div class="box"><img src="image253.jpg" alt="image253"><p>image253</p></div>
+<div class="box"><img src="image254.jpg" alt="image254"><p>image254</p></div>
+<div class="box"><img src="image255.jpg" alt="image255"><p>image255</p></div>
+<div class="box"><img src="image256.jpg" alt="image256"><p>image256</p></div>
+<div class="box"><img src="image257.jpg" alt="image257"><p>image257</p></div>
+<div class="box"><img src="image258.jpg" alt="image258"><p>image258</p></div>
+<div class="box"><img src="image259.jpg" alt="image259"><p>image259</p></div>
+<div class="box"><img src="image260.jpg" alt="image260"><p>image260</p></div>
+<div class="box"><img src="image261.jpg" alt="image261"><p>image261</p></div>
+<div class="box"><img src="image262.jpg" alt="image262"><p>image262</p></div>
+<div class="box"><img src="image263.jpg" alt="image263"><p>image263</p></div>
+<div class="box"><img src="image264.jpg" alt="image264"><p>image264</p></div>
+<div class="box"><img src="image265.jpg" alt="image265"><p>image265</p></div>
+<div class="box"><img src="image266.jpg" alt="image266"><p>image266</p></div>
+<div class="box"><img src="image267.jpg" alt="image267"><p>image267</p></div>
+<div class="box"><img src="image268.jpg" alt="image268"><p>image268</p></div>
+<div class="box"><img src="image269.jpg" alt="image269"><p>image269</p></div>
+<div class="box"><img src="image270.jpg" alt="image270"><p>image270</p></div>
+<div class="box"><img src="image271.jpg" alt="image271"><p>image271</p></div>
+<div class="box"><img src="image272.jpg" alt="image272"><p>image272</p></div>
+<div class="box"><img src="image273.jpg" alt="image273"><p>image273</p></div>
+<div class="box"><img src="image274.jpg" alt="image274"><p>image274</p></div>
+<div class="box"><img src="image275.jpg" alt="image275"><p>image275</p></div>
+<div class="box"><img src="image276.jpg" alt="image276"><p>image276</p></div>
+<div class="box"><img src="image277.jpg" alt="image277"><p>image277</p></div>
+<div class="box"><img src="image278.jpg" alt="image278"><p>image278</p></div>
+<div class="box"><img src="image279.jpg" alt="image279"><p>image279</p></div>
+<div class="box"><img src="image280.jpg" alt="image280"><p>image280</p></div>
+<div class="box"><img src="image281.jpg" alt="image281"><p>image281</p></div>
+<div class="box"><img src="image282.jpg" alt="image282"><p>image282</p></div>
+<div class="box"><img src="image283.jpg" alt="image283"><p>image283</p></div>
+<div class="box"><img src="image284.jpg" alt="image284"><p>image284</p></div>
+<div class="box"><img src="image285.jpg" alt="image285"><p>image285</p></div>
+<div class="box"><img src="image286.jpg" alt="image286"><p>image286</p></div>
+<div class="box"><img src="image287.jpg" alt="image287"><p>image287</p></div>
+<div class="box"><img src="image288.jpg" alt="image288"><p>image288</p></div>
+<div class="box"><img src="image289.jpg" alt="image289"><p>image289</p></div>
+<div class="box"><img src="image290.jpg" alt="image290"><p>image290</p></div>
+<div class="box"><img src="image291.jpg" alt="image291"><p>image291</p></div>
+<div class="box"><img src="image292.jpg" alt="image292"><p>image292</p></div>
+<div class="box"><img src="image293.jpg" alt="image293"><p>image293</p></div>
+<div class="box"><img src="image294.jpg" alt="image294"><p>image294</p></div>
+<div class="box"><img src="image295.jpg" alt="image295"><p>image295</p></div>
+<div class="box"><img src="image296.jpg" alt="image296"><p>image296</p></div>
+<div class="box"><img src="image297.jpg" alt="image297"><p>image297</p></div>
+<div class="box"><img src="image298.jpg" alt="image298"><p>image298</p></div>
+<div class="box"><img src="image299.jpg" alt="image299"><p>image299</p></div>
+<div class="box"><img src="image300.jpg" alt="image300"><p>image300</p></div>
+<div class="box"><img src="image301.jpg" alt="image301"><p>image301</p></div>
+<div class="box"><img src="image302.jpg" alt="image302"><p>image302</p></div>
+<div class="box"><img src="image303.jpg" alt="image303"><p>image303</p></div>
+<div class="box"><img src="image304.jpg" alt="image304"><p>image304</p></div>
+<div class="box"><img src="image305.jpg" alt="image305"><p>image305</p></div>
+<div class="box"><img src="image306.jpg" alt="image306"><p>image306</p></div>
+<div class="box"><img src="image307.jpg" alt="image307"><p>image307</p></div>
+<div class="box"><img src="image308.jpg" alt="image308"><p>image308</p></div>
+<div class="box"><img src="image309.jpg" alt="image309"><p>image309</p></div>
+<div class="box"><img src="image310.jpg" alt="image310"><p>image310</p></div>
+<div class="box"><img src="image311.jpg" alt="image311"><p>image311</p></div>
+<div class="box"><img src="image312.jpg" alt="image312"><p>image312</p></div>
+<div class="box"><img src="image313.jpg" alt="image313"><p>image313</p></div>
+<div class="box"><img src="image314.jpg" alt="image314"><p>image314</p></div>
+<div class="box"><img src="image315.jpg" alt="image315"><p>image315</p></div>
+<div class="box"><img src="image316.jpg" alt="image316"><p>image316</p></div>
+<div class="box"><img src="image317.jpg" alt="image317"><p>image317</p></div>
+<div class="box"><img src="image318.jpg" alt="image318"><p>image318</p></div>
+<div class="box"><img src="image319.jpg" alt="image319"><p>image319</p></div>
+<div class="box"><img src="image320.jpg" alt="image320"><p>image320</p></div>
+<div class="box"><img src="image321.jpg" alt="image321"><p>image321</p></div>
+<div class="box"><img src="image322.jpg" alt="image322"><p>image322</p></div>
+<div class="box"><img src="image323.jpg" alt="image323"><p>image323</p></div>
+<div class="box"><img src="image324.jpg" alt="image324"><p>image324</p></div>
+<div class="box"><img src="image325.jpg" alt="image325"><p>image325</p></div>
+<div class="box"><img src="image326.jpg" alt="image326"><p>image326</p></div>
+<div class="box"><img src="image327.jpg" alt="image327"><p>image327</p></div>
+<div class="box"><img src="image328.jpg" alt="image328"><p>image328</p></div>
+<div class="box"><img src="image329.jpg" alt="image329"><p>image329</p></div>
+<div class="box"><img src="image330.jpg" alt="image330"><p>image330</p></div>
+<div class="box"><img src="image331.jpg" alt="image331"><p>image331</p></div>
+<div class="box"><img src="image332.jpg" alt="image332"><p>image332</p></div>
+<div class="box"><img src="image333.jpg" alt="image333"><p>image333</p></div>
+<div class="box"><img src="image334.jpg" alt="image334"><p>image334</p></div>
+<div class="box"><img src="image335.jpg" alt="image335"><p>image335</p></div>
+<div class="box"><img src="image336.jpg" alt="image336"><p>image336</p></div>
+<div class="box"><img src="image337.jpg" alt="image337"><p>image337</p></div>
+<div class="box"><img src="image338.jpg" alt="image338"><p>image338</p></div>
+<div class="box"><img src="image339.jpg" alt="image339"><p>image339</p></div>
+<div class="box"><img src="image340.jpg" alt="image340"><p>image340</p></div>
+<div class="box"><img src="image341.jpg" alt="image341"><p>image341</p></div>
+<div class="box"><img src="image342.jpg" alt="image342"><p>image342</p></div>
+<div class="box"><img src="image343.jpg" alt="image343"><p>image343</p></div>
+<div class="box"><img src="image344.jpg" alt="image344"><p>image344</p></div>
+<div class="box"><img src="image345.jpg" alt="image345"><p>image345</p></div>
+<div class="box"><img src="image346.jpg" alt="image346"><p>image346</p></div>
+<div class="box"><img src="image347.jpg" alt="image347"><p>image347</p></div>
+<div class="box"><img src="image348.jpg" alt="image348"><p>image348</p></div>
+<div class="box"><img src="image349.jpg" alt="image349"><p>image349</p></div>
+<div class="box"><img src="image350.jpg" alt="image350"><p>image350</p></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+
+
+
+
+  <!-- ... isi tarah 100 images add kar sakte ho -->
+</div>
+
+<img id="image-display" src="" alt="Click a box to see image">
+
+<script>
+const display = document.getElementById('image-display');
+const boxes = document.querySelectorAll('.box img');
+
+boxes.forEach(img => {
+  img.addEventListener('click', () => {
+    display.src = img.src;
+    display.style.display = 'block';
+    window.scrollTo({ top: display.offsetTop - 20, behavior: 'smooth' });
+  });
+});
+</script>
+
+</body>
+</html>
